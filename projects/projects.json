@@ -1,0 +1,52 @@
+[
+  {
+    "name": "BloodBridge",
+    "desc": "A modern, real-time blood donation and matching platform designed to connect blood donors, recipients, and hospitals with a responsive design.",
+    "image": "bloodbridge",
+    "category": "web",
+    "links": {
+      "view": "https://github.com/Prem-Agravat/BloodBridge",
+      "code": "https://github.com/Prem-Agravat/BloodBridge"
+    }
+  },
+  {
+    "name": "NexusAI Universe",
+    "desc": "A futuristic AI-powered learning and productivity ecosystem featuring specialized AI mentors, coding assistants, and interview coaches.",
+    "image": "nexusai",
+    "category": "web",
+    "links": {
+      "view": "https://github.com/Prem-Agravat/nexusai-universe",
+      "code": "https://github.com/Prem-Agravat/nexusai-universe"
+    }
+  },
+  {
+    "name": "Akshar Sofa Showroom",
+    "desc": "An elegant, interactive furniture showroom portfolio displaying premium sofa collections with a beautiful UI and client inquiries management.",
+    "image": "aksharsofa",
+    "category": "web",
+    "links": {
+      "view": "https://akshar-sofa.vercel.app",
+      "code": "https://github.com/Prem-Agravat/akshar-sofa"
+    }
+  },
+  {
+    "name": "Clinic WhatsApp AI Agent",
+    "desc": "🏥 AI-driven WhatsApp chatbot for clinics, enabling automated patient support, appointment scheduling, and answering FAQs.",
+    "image": "whatsappbot",
+    "category": "web",
+    "links": {
+      "view": "https://github.com/Prem-Agravat/clinic-whatsapp-ai-agent",
+      "code": "https://github.com/Prem-Agravat/clinic-whatsapp-ai-agent"
+    }
+  },
+  {
+    "name": "ExpenSave Mobile App",
+    "desc": "Sleek and intuitive Flutter-based expense tracking application designed for personal finance management and budgeting.",
+    "image": "expensave",
+    "category": "flutter",
+    "links": {
+      "view": "https://github.com/Prem-Agravat/expen_save",
+      "code": "https://github.com/Prem-Agravat/expen_save"
+    }
+  }
+]
