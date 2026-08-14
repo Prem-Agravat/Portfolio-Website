@@ -1,7 +1,7 @@
 document.addEventListener("DOMContentLoaded", () => {
     // ⚙️ Configurations
     // Replace this placeholder with your actual deployed Render service URL:
-    const PRODUCTION_API_URL = "https://portfolio-website-wycy.onrender.com";
+    const PRODUCTION_API_URL = "https://portfolio-website-wycy.onrender.com/api/chat";
 
     // Auto-detect local vs production backend environment
     const getBackendUrl = () => {
