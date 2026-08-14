@@ -1,8 +1,8 @@
 document.addEventListener("DOMContentLoaded", () => {
     // ⚙️ Configurations
     // Replace this placeholder with your actual deployed Render service URL:
-    const PRODUCTION_API_URL = "https://your-portfolio-backend-url.onrender.com/api/chat";
-    
+    const PRODUCTION_API_URL = "https://portfolio-website-wycy.onrender.com";
+
     // Auto-detect local vs production backend environment
     const getBackendUrl = () => {
         const hostname = window.location.hostname;
@@ -34,7 +34,7 @@ document.addEventListener("DOMContentLoaded", () => {
             chatWindow.classList.add("open");
             chatButton.classList.add("active");
             chatInput.focus();
-            
+
             // Show welcome message if empty
             if (chatMessages.children.length === 0) {
                 addMessage("Hi! I'm Prem's AI Assistant. Ask me anything about Prem's skills, projects, experience, or education!", "bot");
