@@ -8,6 +8,8 @@
     <meta name="description" content="Welcome to Prem Agravat's Portfolio. Web Developer, Flutter Developer, and Computer Engineering Student. Skilled in PHP, Flutter, Dart, Java, and database systems. Open to internships and remote work opportunities." />
     <!-- Custom CSS -->
     <link rel="stylesheet" href="./assets/css/style.css">
+    <!-- Chatbot CSS -->
+    <link rel="stylesheet" href="./assets/css/chat.css">
     <!-- Font Awesome -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <!-- Favicon -->
@@ -325,6 +327,31 @@
 
 <!-- ==== ALL MAJOR JAVASCRIPT CDNS ENDS ==== -->
 
+<!-- Chatbot Widget -->
+<div id="chat-widget-container">
+    <div id="chat-widget-window">
+        <div class="chat-header">
+            <div class="chat-header-info">
+                <img class="chat-header-avatar" src="./assets/images/hero.png" alt="Prem AI Avatar">
+                <div class="chat-header-title">
+                    <h4>Prem's AI Assistant</h4>
+                    <span>Active Now</span>
+                </div>
+            </div>
+            <button class="chat-close-btn"><i class="fas fa-times"></i></button>
+        </div>
+        <div class="chat-messages"></div>
+        <div class="chat-input-area">
+            <input type="text" id="chat-input" placeholder="Ask about Prem...">
+            <button class="chat-send-btn"><i class="fas fa-paper-plane"></i></button>
+        </div>
+    </div>
+    <div id="chat-widget-button">
+        <i class="fas fa-comment-dots"></i>
+    </div>
+</div>
+
+<script src="./assets/js/chat.js"></script>
 <script src="./assets/js/script.js"></script>
 
 </body>
