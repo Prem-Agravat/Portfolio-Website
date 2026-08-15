@@ -1283,9 +1283,15 @@ form .button-area {
     right: 2.5rem;
   }
   body.chat-open #scroll-top.active {
-    opacity: 0;
-    pointer-events: none;
-    transform: scale(0);
+    right: 8.5rem;
+    top: calc(100% - 54.3rem);
+    width: 3.5rem;
+    height: 3.5rem;
+    background: transparent;
+    color: #ffffff;
+    box-shadow: none;
+    font-size: 1.8rem;
+    opacity: 0.8;
   }
 }
 /* common media queries ends*/
@@ -1304,7 +1310,15 @@ form .button-area {
   background: #ffae00;
   color: rgb(13, 0, 44);
   border-radius: 50%;
-  transition: top 0.8s cubic-bezier(0.175, 0.885, 0.32, 1.275), right 0.8s cubic-bezier(0.175, 0.885, 0.32, 1.275), opacity 0.3s ease, transform 0.2s ease, background 0.2s ease;
+  transition: top 0.8s cubic-bezier(0.175, 0.885, 0.32, 1.275), 
+              right 0.8s cubic-bezier(0.175, 0.885, 0.32, 1.275), 
+              width 0.5s ease, 
+              height 0.5s ease, 
+              background-color 0.5s ease, 
+              color 0.5s ease, 
+              box-shadow 0.5s ease, 
+              opacity 0.3s ease, 
+              transform 0.2s ease;
   z-index: 1000;
   box-shadow: 0 4px 15px rgba(255, 174, 0, 0.3);
 }
@@ -1312,11 +1326,24 @@ form .button-area {
   background: #e69d00;
   transform: scale(1.1);
 }
+body.chat-open #scroll-top:hover {
+  background: transparent;
+  transform: scale(1.15);
+  opacity: 1;
+}
 #scroll-top.active {
   top: calc(100% - 17rem);
 }
 body.chat-open #scroll-top.active {
-  right: 40rem;
-  top: calc(100% - 8rem);
+  right: 9.5rem;
+  top: calc(100% - 57.25rem);
+  width: 3.5rem;
+  height: 3.5rem;
+  background: transparent;
+  color: #ffffff;
+  box-shadow: none;
+  font-size: 1.8rem;
+  opacity: 0.8;
+  z-index: 1001; /* Ensure it floats above the chat header */
 }
 /* scroll top ends */
