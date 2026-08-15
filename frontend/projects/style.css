@@ -330,6 +330,9 @@ header .navbar ul li a:hover{
   section{
     padding: 2rem;
   }
+  #scroll-top {
+    right: 2.5rem;
+  }
 }
 /* common media queries ends*/
 
@@ -338,16 +341,25 @@ header .navbar ul li a:hover{
 #scroll-top{
   position: fixed;
   top: -140%;
-  right: 2rem;
-  padding: 1rem 1.5rem;
+  right: 3.5rem;
+  width: 5rem;
+  height: 5rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
   font-size: 2rem;
   background: #ffae00;
   color: rgb(13, 0, 44);
-  border-radius: 5rem;
-  transition: 1s linear;
+  border-radius: 50%;
+  transition: top 1s linear, transform 0.2s ease, background 0.2s ease;
   z-index: 1000;
+  box-shadow: 0 4px 15px rgba(255, 174, 0, 0.3);
+}
+#scroll-top:hover {
+  background: #e69d00;
+  transform: scale(1.1);
 }
 #scroll-top.active{
-  top: calc(100% - 12rem);
+  top: calc(100% - 17rem);
 }
 /* scroll top ends */
