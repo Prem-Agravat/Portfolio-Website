@@ -1671,46 +1671,73 @@ body.dark-theme .chat-input-area input:focus {
    INTERACTIVE DEVELOPER TERMINAL & MATRIX STYLING
    ========================================================================== */
 
-/* Floating Action Button */
+/* Floating Action Button (Cyberpunk Console Badge) - Bottom Left */
 #terminal-widget-button {
   position: fixed;
-  bottom: 105px; /* Stacked cleanly above Chatbot button which is at 30px */
-  right: 30px;
-  width: 60px;
-  height: 60px;
-  border-radius: 50%;
-  background: linear-gradient(135deg, #10b981, #059669);
-  box-shadow: 0 4px 15px rgba(16, 185, 129, 0.4);
+  bottom: 30px;
+  left: 30px;
+  right: auto;
+  width: 140px;
+  height: 45px;
+  border-radius: 4px;
+  background: #0d1510;
+  border: 2px solid #10b981;
+  box-shadow: 0 0 10px rgba(16, 185, 129, 0.2), inset 0 0 5px rgba(16, 185, 129, 0.1);
   display: flex;
   justify-content: center;
   align-items: center;
+  gap: 8px;
   cursor: pointer;
-  transition: all 0.3s cubic-bezier(0.175, 0.885, 0.32, 1.275);
-  color: #fff;
-  font-size: 22px;
+  transition: all 0.3s ease;
+  color: #10b981;
+  font-family: 'Courier New', Courier, monospace;
+  font-size: 13px;
+  font-weight: bold;
+  letter-spacing: 1px;
   z-index: 1000;
+  text-transform: uppercase;
+}
+
+#terminal-widget-button::after {
+  content: "CONSOLE";
+}
+
+#terminal-widget-button i {
+  font-size: 14px;
 }
 
 #terminal-widget-button:hover {
-  transform: scale(1.1) rotate(-10deg);
-  box-shadow: 0 6px 20px rgba(16, 185, 129, 0.6);
+  transform: translateY(-3px);
+  color: #fff;
+  border-color: #00ff66;
+  box-shadow: 0 0 15px rgba(0, 255, 102, 0.5), inset 0 0 8px rgba(0, 255, 102, 0.2);
+  background: #111a14;
 }
 
 #terminal-widget-button.active {
-  background: linear-gradient(135deg, #ef4444, #dc2626);
-  box-shadow: 0 4px 15px rgba(239, 68, 68, 0.4);
+  background: #1a0f0f;
+  border-color: #ef4444;
+  color: #ef4444;
+  box-shadow: 0 0 15px rgba(239, 68, 68, 0.5);
+}
+
+#terminal-widget-button.active::after {
+  content: "CLOSE";
 }
 
 body.chat-open #terminal-widget-button {
   opacity: 0;
   pointer-events: none;
-  transform: scale(0.8);
+  transform: translateX(-20px) scale(0.9);
 }
 
 @media (max-width: 450px) {
   #terminal-widget-button {
-    right: 2.5rem;
-    bottom: 95px;
+    left: 20px;
+    bottom: 20px;
+    width: 120px;
+    height: 40px;
+    font-size: 11px;
   }
 }
 
