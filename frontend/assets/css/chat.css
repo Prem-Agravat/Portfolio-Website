@@ -33,7 +33,7 @@
 }
 
 #chat-widget-button.active i {
-    transform: rotate(90deg);
+    transform: rotate(180deg);
 }
 
 /* Chat Window */

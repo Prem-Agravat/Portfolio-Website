@@ -27,12 +27,21 @@ document.addEventListener("DOMContentLoaded", () => {
     // 📢 Toggle Chat Window
     const toggleChat = () => {
         const isOpen = chatWindow.classList.contains("open");
+        const icon = chatButton.querySelector("i");
         if (isOpen) {
             chatWindow.classList.remove("open");
             chatButton.classList.remove("active");
+            document.body.classList.remove("chat-open");
+            if (icon) {
+                icon.className = "fas fa-comment-dots";
+            }
         } else {
             chatWindow.classList.add("open");
             chatButton.classList.add("active");
+            document.body.classList.add("chat-open");
+            if (icon) {
+                icon.className = "fas fa-times";
+            }
             chatInput.focus();
 
             // Show welcome message if empty
