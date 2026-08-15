@@ -1447,6 +1447,10 @@ body.dark-theme .about {
   background: #1e293b;
 }
 
+body.dark-theme .about .row .content .tag {
+  color: #38bdf8;
+}
+
 body.dark-theme .about .content h3 {
   color: #ffffff;
 }
@@ -1476,6 +1480,16 @@ body.dark-theme .skills .bar .info span {
   color: #ffffff;
 }
 
+/* Invert white GitHub logo in light theme so it is visible */
+body:not(.dark-theme) .skills .bar .info img[alt="GitHub"] {
+  filter: invert(1);
+}
+
+/* Invert black jQuery logo in dark theme so it is visible */
+body.dark-theme .skills .bar .info img[alt="jQuery"] {
+  filter: invert(1) brightness(2);
+}
+
 body.dark-theme .education {
   background: #1e293b;
 }
@@ -1497,6 +1511,10 @@ body.dark-theme .education .box-container .box .content p {
   color: #cbd5e1;
 }
 
+body.dark-theme .education h4 {
+  color: #4ade80;
+}
+
 body.dark-theme .work {
   background: #0f172a;
 }
@@ -1505,7 +1523,7 @@ body.dark-theme .experience {
   background: #1e293b;
 }
 
-body.dark-theme .experience .timeline::before {
+body.dark-theme .experience .timeline::after {
   background-color: #334155;
 }
 
@@ -1520,16 +1538,30 @@ body.dark-theme .experience .timeline .container .content {
   box-shadow: 0 4px 20px rgba(0, 0, 0, 0.4);
 }
 
-body.dark-theme .experience .timeline .container .content h2 {
+body.dark-theme .experience .content .tag h2 {
   color: #38bdf8;
 }
 
-body.dark-theme .experience .timeline .container .content h3 {
+body.dark-theme .experience .content .desc h3 {
   color: #ffffff;
 }
 
 body.dark-theme .experience .timeline .container .content p {
   color: #cbd5e1;
+}
+
+body.dark-theme .experience .left::before {
+  border-color: transparent transparent transparent #0f172a;
+}
+
+body.dark-theme .experience .right::before {
+  border-color: transparent #0f172a transparent transparent;
+}
+
+@media screen and (max-width: 600px) {
+  body.dark-theme .experience .container::before {
+    border-color: transparent #0f172a transparent transparent;
+  }
 }
 
 body.dark-theme .contact {
@@ -1546,6 +1578,11 @@ body.dark-theme .contact .container .message textarea {
   background: #0f172a;
   color: #ffffff;
   border: 0.1rem solid #334155;
+}
+
+body.dark-theme .contact .container .field input::placeholder,
+body.dark-theme .contact .container .message textarea::placeholder {
+  color: #64748b;
 }
 
 body.dark-theme .contact .container .field input:focus,
