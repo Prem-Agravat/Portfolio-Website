@@ -32,6 +32,13 @@
             <li><a href="#work">Work</a></li>
             <li><a href="#experience">Experience</a></li>
             <li><a href="#contact">Contact</a></li>
+            <li>
+                <div class="theme-toggle-container">
+                    <button id="theme-toggle" aria-label="Toggle dark mode">
+                        <i class="fas fa-moon"></i>
+                    </button>
+                </div>
+            </li>
             </ul>
         </nav>
 </header>
@@ -350,6 +357,48 @@
         <i class="fas fa-comment-dots"></i>
     </div>
 </div>
+
+<!-- Interactive Developer Terminal Widget -->
+<div id="terminal-widget-button" title="Open Interactive Terminal">
+    <i class="fas fa-terminal"></i>
+</div>
+
+<div id="terminal-widget-window">
+    <div class="terminal-header">
+        <div class="terminal-dots">
+            <span class="terminal-dot red"></span>
+            <span class="terminal-dot yellow"></span>
+            <span class="terminal-dot green"></span>
+        </div>
+        <div class="terminal-title">prem@agravat-pc:~</div>
+        <button class="terminal-close-btn" aria-label="Close Terminal"><i class="fas fa-times"></i></button>
+    </div>
+    <div class="terminal-body">
+        <div class="terminal-output"></div>
+        <div class="terminal-input-container">
+            <span class="terminal-prompt">visitor@prem-portfolio:~$</span>
+            <div class="terminal-input-wrapper">
+                <input type="text" id="terminal-input" autocomplete="off" spellcheck="false">
+                <div class="terminal-caret"></div>
+            </div>
+        </div>
+    </div>
+    <!-- Chip shortcuts for easy mobile command entry -->
+    <div class="terminal-chips">
+        <button class="terminal-chip" data-cmd="help">help</button>
+        <button class="terminal-chip" data-cmd="about">about</button>
+        <button class="terminal-chip" data-cmd="skills">skills</button>
+        <button class="terminal-chip" data-cmd="projects">projects</button>
+        <button class="terminal-chip" data-cmd="experience">experience</button>
+        <button class="terminal-chip" data-cmd="matrix">matrix</button>
+        <button class="terminal-chip" data-cmd="clear">clear</button>
+        <button class="terminal-chip" data-cmd="exit">exit</button>
+    </div>
+</div>
+
+<!-- Fullscreen Matrix rain canvas overlay -->
+<canvas id="matrix-canvas"></canvas>
+<div class="matrix-exit-hint">Press any key or click anywhere to exit Matrix mode</div>
 
 <script src="./assets/js/chat.js"></script>
 <script src="./assets/js/script.js"></script>
