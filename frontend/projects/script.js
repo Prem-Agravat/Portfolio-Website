@@ -44,24 +44,26 @@ function showProjects(projects) {
     let projectsContainer = document.querySelector(".work .box-container");
     let projectsHTML = "";
     projects.forEach(project => {
+        const techBadges = project.tech ? project.tech.map(tech => `<span class="tech-badge">${tech}</span>`).join('') : '';
         projectsHTML += `
         <div class="grid-item ${project.category}">
-        <div class="box tilt" style="width: 380px; margin: 1rem">
-      <img draggable="false" src="/assets/images/projects/${project.image}.png" alt="project" />
-      <div class="content">
-        <div class="tag">
-        <h3>${project.name}</h3>
-        </div>
-        <div class="desc">
-          <p>${project.desc}</p>
-          <div class="btns">
-            <a href="${project.links.view}" class="btn" target="_blank"><i class="fas fa-eye"></i> View</a>
-            <a href="${project.links.code}" class="btn" target="_blank">Code <i class="fas fa-code"></i></a>
+          <div class="box tilt" style="width: 380px; margin: 1rem">
+            <div class="img-container">
+              <img draggable="false" src="/assets/images/projects/${project.image}.png" alt="project" />
+            </div>
+            <div class="content">
+              <h3>${project.name}</h3>
+              <p class="desc">${project.desc}</p>
+              <div class="tech-stack">
+                ${techBadges}
+              </div>
+              <div class="btns">
+                <a href="${project.links.view}" class="btn" target="_blank"><i class="fas fa-eye"></i> View</a>
+                <a href="${project.links.code}" class="btn" target="_blank">Code <i class="fas fa-code"></i></a>
+              </div>
+            </div>
           </div>
-        </div>
-      </div>
-    </div>
-    </div>`
+        </div>`
     });
     projectsContainer.innerHTML = projectsHTML;
 

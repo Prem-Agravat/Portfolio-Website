@@ -4,6 +4,7 @@
     "desc": "A modern, real-time blood donation and matching platform designed to connect blood donors, recipients, and hospitals with a responsive design.",
     "image": "bloodbridge",
     "category": "web",
+    "tech": ["HTML", "CSS", "JavaScript", "PHP", "PostgreSQL"],
     "links": {
       "view": "https://github.com/Prem-Agravat/BloodBridge",
       "code": "https://github.com/Prem-Agravat/BloodBridge"
@@ -14,6 +15,7 @@
     "desc": "A futuristic AI-powered learning and productivity ecosystem featuring specialized AI mentors, coding assistants, and interview coaches.",
     "image": "nexusai",
     "category": "web",
+    "tech": ["React", "Node.js", "Gemini API", "Tailwind"],
     "links": {
       "view": "https://github.com/Prem-Agravat/nexusai-universe",
       "code": "https://github.com/Prem-Agravat/nexusai-universe"
@@ -24,6 +26,7 @@
     "desc": "An elegant, interactive furniture showroom portfolio displaying premium sofa collections with a beautiful UI and client inquiries management.",
     "image": "aksharsofa",
     "category": "web",
+    "tech": ["HTML", "CSS", "JavaScript", "Vercel"],
     "links": {
       "view": "https://akshar-sofa.vercel.app",
       "code": "https://github.com/Prem-Agravat/akshar-sofa"
@@ -34,6 +37,7 @@
     "desc": "🏥 AI-driven WhatsApp chatbot for clinics, enabling automated patient support, appointment scheduling, and answering FAQs.",
     "image": "whatsappbot",
     "category": "web",
+    "tech": ["Node.js", "WhatsApp API", "Gemini API"],
     "links": {
       "view": "https://github.com/Prem-Agravat/clinic-whatsapp-ai-agent",
       "code": "https://github.com/Prem-Agravat/clinic-whatsapp-ai-agent"
@@ -44,9 +48,43 @@
     "desc": "Sleek and intuitive Flutter-based expense tracking application designed for personal finance management and budgeting.",
     "image": "expensave",
     "category": "flutter",
+    "tech": ["Flutter", "Dart", "SQLite"],
     "links": {
       "view": "https://github.com/Prem-Agravat/expen_save",
       "code": "https://github.com/Prem-Agravat/expen_save"
+    }
+  },
+  {
+    "name": "Personal AI Portfolio",
+    "desc": "A premium personal portfolio website featuring custom glassmorphism styles, tilt effects, and an integrated Gemini-powered AI chatbot assistant.",
+    "image": "portfolio",
+    "category": "web",
+    "tech": ["HTML", "CSS", "JavaScript", "Express", "Gemini API"],
+    "links": {
+      "view": "https://github.com/Prem-Agravat/Portfolio-Website",
+      "code": "https://github.com/Prem-Agravat/Portfolio-Website"
+    }
+  },
+  {
+    "name": "DevStore eCommerce",
+    "desc": "A full-featured digital storefront application showing product catalogs with advanced sorting/filtering and a secure Stripe checkout process.",
+    "image": "devstore",
+    "category": "web",
+    "tech": ["React", "Node.js", "Express", "MongoDB", "Stripe"],
+    "links": {
+      "view": "https://github.com/Prem-Agravat",
+      "code": "https://github.com/Prem-Agravat"
+    }
+  },
+  {
+    "name": "ChatApp Realtime",
+    "desc": "A real-time messaging application supporting multiple chat rooms, user online presence indicators, and responsive message bubble logs.",
+    "image": "chatapp",
+    "category": "web",
+    "tech": ["React", "Node.js", "Socket.io", "Express"],
+    "links": {
+      "view": "https://github.com/Prem-Agravat",
+      "code": "https://github.com/Prem-Agravat"
     }
   }
 ]
